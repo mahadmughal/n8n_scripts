@@ -1,7 +1,7 @@
 #SEC
 namespace :custom_tasks do
   desc "Execute my custom script"
-  task ES_8651_sec_move_out: :environment do
+  task ES_1992_sec_move_out: :environment do
     EFrame.db_adapter.with_client do
       request_repository = App::Model::SecRequestRepository.new(EFrame::Iam.system_context)
       sec_service = App::Services::SecRequestService.new(EFrame::Iam.system_context)
